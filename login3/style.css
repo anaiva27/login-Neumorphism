@@ -1,0 +1,193 @@
+:root {
+    --bg-color: linear-gradient(145deg, #d2dff4, #c0f6ed8c);
+    --text-color: #333;
+    --shadow-light: #ffffff;
+    --shadow-dark: #bebebe;
+    --highlight: #6fc3df;
+  }
+
+  body[data-theme="dark"] {
+    --bg-color: linear-gradient(145deg, #3e4552, #5660608c);
+    --text-color: #f0f0f0;
+    --shadow-light: #2a2a2a;
+    --shadow-dark: #432727;
+    --highlight: #00bcd4;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.4s ease;
+  }
+
+  .container {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px var(--shadow-dark),
+                -8px -8px 16px var(--shadow-light);
+    width: 350px;
+    position: relative;
+    transition: box-shadow 0.4s;
+  }
+
+  .toggle, .theme-switch {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #formToggle, #themeToggle {
+    display: none;
+  }
+
+  .switch, .theme-btn {
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    border-radius: 50px;
+    background: var(--bg-color);
+    position: relative;
+    box-shadow: inset 4px 4px 8px var(--shadow-dark),
+                inset -4px -4px 8px var(--shadow-light);
+    cursor: pointer;
+  }
+
+  .switch i, .theme-btn i {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    font-size: 16px;
+    color: var(--highlight);
+    transition: transform 0.3s ease;
+  }
+
+  #formToggle:checked + .switch i {
+    transform: translateX(30px);
+  }
+
+  #themeToggle:checked + .theme-btn i {
+    transform: translateX(30px) rotate(180deg);
+  }
+
+  form {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  form.active {
+    display: flex;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .input-group {
+    position: relative;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 16px;
+    border-radius: 15px;
+    border: none;
+    background: var(--bg-color);
+    box-shadow: inset 4px 4px 8px var(--shadow-dark),
+                inset -4px -4px 8px var(--shadow-light);
+    color: var(--text-color);
+  }
+
+  .input-group input:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--highlight);
+  }
+
+  .input-group label {
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 12px;
+    font-size: 12px;
+    background: var(--bg-color);
+    padding: 0 4px;
+  }
+
+  button {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background: var(--bg-color);
+    font-weight: bold;
+    box-shadow: 6px 6px 12px var(--shadow-dark),
+                -6px -6px 12px var(--shadow-light);
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--text-color);
+  }
+
+  button:hover {
+    box-shadow: 0 0 12px var(--highlight),
+                inset 2px 2px 8px var(--shadow-dark);
+  }
+
+  .social-login {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .social-btn i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-btn:hover i {
+    transform: scale(1.3);
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--highlight);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+  }
