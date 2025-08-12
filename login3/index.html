@@ -1,69 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Neumorphism login Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Neumorphism login Page</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+		<!-- Font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="style-mobile.css"
+		/>
+	</head>
+	<body>
+		<div class="wrapper-main">
+			<div class="corner-left-b">A27</div>
+			<div class="corner-left-t">A27</div>
+			<!-- <div class="corner-right-t">A27</div> -->
+			<div class="corner-right-b">10:00am | 08 | 09 | 2025</div>
+			<div class="center-t">A27</div>
+			<div class="toggle-container">
+				<div class="theme-switch">
+					<input
+						type="checkbox"
+						id="themeToggle"
+					/>
+					<label
+						class="theme-btn"
+						for="themeToggle"
+						><i class="fas fa-moon"></i
+					></label>
+				</div>
+			</div>
+			<div class="center-b">A27</div>
+			<div class="horizontal-line-t"></div>
+			<div class="horizontal-line-b"></div>
 
-  <div class="container">
-    <div class="toggle">
-      <input type="checkbox" id="formToggle">
-      <label class="switch" for="formToggle"><i class="fas fa-lock"></i></label>
-    </div>
+			<div class="aside-left">
+				<div class="container-left">
+					<!-- <div class="intro-container">
+						<div class="form-container no-bg"> -->
+					<!-- <p class="body-text soft-p-text">
+							Flexible Digital <br />
+							Solutions Beautifully Made
+						</p> -->
+					<br />
+					<!-- <p class="body-text soft-p-text"> -->
+					<p class="subtitle soft-h-text">
+						Web App<br />Mobile App <br />3D Graphics<br /><br /><span
+							class="hide-mobile"
+						>
+							Simple
+							<br />or<br />
+							complex</span
+						>
+					</p>
+					<!-- </div>
+					</div> -->
+				</div>
+			</div>
 
-    <div class="theme-switch">
-      <input type="checkbox" id="themeToggle">
-      <label class="theme-btn" for="themeToggle"><i class="fas fa-moon"></i></label>
-    </div>
+			<div class="container-center">
+				<!-- <h5 class="subtitle soft-s-text">Web Lab</h5> -->
+				<h1 class="logo-text soft-text">
+					<!-- <span class="subtitle soft-h-text right-40">WEB</span> -->
+					A27 Web Lab
+					<!-- <span
+						class="subtitle soft-h-text"
+						>LAB</span
+					> -->
+				</h1>
+				<!-- <h5 class="subtitle soft-h-text">Web Lab</h5> -->
+				<h5 class="subtitle soft-h-text text-dark">
+					Web Design
+					<div class="vertical-line"></div>
+					Development
+				</h5>
+				<br />
+				<p class="body-text soft-p-text"></p>
+				<!-- Need to update your online presence? You are in the right place. -->
+				Your online presence deserves an upgrade. We’re here to make it happen.
+				<br />
+				We create custom designs, so you can look amazing online and feel proud
+				every time you see it. <br /><br />
+				<div class="form-container">
+					<p class="subtitle soft-h-text">Inquire about availability</p>
+					<!-- <p class="subtitle soft-s-text">Inquire about availability</p> -->
+					<div class="circle"></div>
+				</div>
+				<!-- <div class="form-container">
+					<div class="toggle-container">
+						<div class="toggle">
+							<input
+								type="checkbox"
+								id="formToggle"
+							/>
+							<label
+								class="switch"
+								for="formToggle"
+								><i class="fas fa-lock"></i
+							></label>
+						</div>
 
-    <form id="loginForm" class="active">
-      <h2>Login</h2>
-      <div class="input-group">
-        <input type="text" placeholder=" " required>
-        <label>Username</label>
-      </div>
-      <div class="input-group">
-        <input type="password" placeholder=" " required>
-        <label>Password</label>
-      </div>
-      <button type="submit">Login</button>
-      <div class="social-login">
-        <button class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</button>
-        <button class="social-btn"><i class="fab fa-google"></i> Google</button>
-        <button class="social-btn"><i class="fab fa-github"></i> GitHub</button>
-      </div>
-    </form>
+						<div class="theme-switch">
+							<input
+								type="checkbox"
+								id="themeToggle"
+							/>
+							<label
+								class="theme-btn"
+								for="themeToggle"
+								><i class="fas fa-moon"></i
+							></label>
+						</div>
+					</div>
 
-    <form id="registerForm">
-      <h2>Register</h2>
-      <div class="input-group">
-        <input type="text" placeholder=" " required>
-        <label>Username</label>
-      </div>
-      <div class="input-group">
-        <input type="email" placeholder=" " required>
-        <label>Email</label>
-      </div>
-      <div class="input-group">
-        <input type="password" placeholder=" " required>
-        <label>Password</label>
-      </div>
-      <button type="submit">Register</button>
-      <div class="social-login">
-        <button class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</button>
-        <button class="social-btn"><i class="fab fa-google"></i> Google</button>
-        <button class="social-btn"><i class="fab fa-github"></i> GitHub</button>
-      </div>
-    </form>
-  </div>
+					<form
+						id="loginForm"
+						class="active"
+					>
+						<div class="input-group">
+							<input
+								type="text"
+								placeholder=" "
+								required
+							/>
+							<label>Username</label>
+						</div>
+						<div class="input-group">
+							<input
+								type="password"
+								placeholder=" "
+								required
+							/>
+							<label>Password</label>
+						</div>
+						<div class="social-login">
+							<button class="social-btn">
+								<i class="fab fa-facebook-f"></i> Facebook
+							</button>
+							<button class="social-btn">
+								<i class="fab fa-google"></i> Google
+							</button>
+							<button class="social-btn">
+								<i class="fab fa-github"></i> GitHub
+							</button>
+						</div>
+					</form>
 
-  <div class="toast" id="toast">Submitted Successfully!</div>
-<script src="script.js"></script>
-</body>
+					<form id="registerForm">
+						<h2>Register</h2>
+						<div class="input-group">
+							<input
+								type="text"
+								placeholder=" "
+								required
+							/>
+							<label>Username</label>
+						</div>
+						<div class="input-group">
+							<input
+								type="email"
+								placeholder=" "
+								required
+							/>
+							<label>Email</label>
+						</div>
+						<div class="input-group">
+							<input
+								type="password"
+								placeholder=" "
+								required
+							/>
+							<label>Password</label>
+						</div>
+						<button type="submit">Register</button>
+						<div class="social-login">
+							<button class="social-btn">
+								<i class="fab fa-facebook-f"></i> Facebook
+							</button>
+							<button class="social-btn">
+								<i class="fab fa-google"></i> Google
+							</button>
+							<button class="social-btn">
+								<i class="fab fa-github"></i> GitHub
+							</button>
+						</div>
+					</form>
+				</div> -->
+			</div>
+			<!-- <div class="container-image">
+				<img
+					class="bg-image rotate"
+					src="./assets/_3.png"
+					alt=""
+				/>
+			</div> -->
+
+			<div class="aside-right">
+				<div class="container-right">
+					<div class="project-container">
+						<p class="subtitle soft-s-text">01 PROJECT</p>
+					</div>
+					<div class="project-container">
+						<p class="subtitle soft-s-text">02 PROJECT</p>
+					</div>
+					<div class="project-container">
+						<p class="subtitle soft-s-text">03 PROJECT</p>
+					</div>
+					<div class="project-container">
+						<p class="subtitle soft-s-text">04 PROJECT</p>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="toast"
+				id="toast"
+			>
+				Submitted Successfully!
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>

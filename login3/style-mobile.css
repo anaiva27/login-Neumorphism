@@ -1,0 +1,124 @@
+@media (max-width: 1000px) {
+	.wrapper-main {
+		min-height: 775px;
+	}
+
+	.project-container {
+		width: 70vw;
+	}
+
+	.intro-container {
+		width: 70vw;
+	}
+
+	.aside-right {
+		width: 100%;
+		position: absolute;
+		height: fit-content;
+		bottom: 45px;
+		left: 0;
+		gap: 15px;
+	}
+	.aside-left {
+		width: 60vw;
+		position: absolute;
+		top: 50px;
+		height: fit-content;
+	}
+
+	.logo-text {
+		color: var(--text-color);
+		text-align: center;
+		font-size: max(7vw, 50px);
+		margin-bottom: -15px;
+	}
+
+	.right-40 {
+		margin-right: 45px;
+	}
+
+	.headline {
+		color: var(--text-color);
+		font-size: 70px;
+	}
+
+	.subtitle {
+		color: var(--text-sub-color);
+		font-size: max(15px, 5vw);
+		text-transform: uppercase;
+	}
+
+	.body-text {
+		color: var(--text-body-color);
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.soft-text {
+		text-shadow: 2px 2px 1px var(--shadow-dark),
+			-2px -2px 1px var(--shadow-light);
+	}
+
+	.soft-h-text {
+		text-shadow: 2px 1px 1px var(--shadow-dark),
+			-2px -1px 1px var(--shadow-light);
+		letter-spacing: 1px;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.project-container {
+		padding: 2rem;
+	}
+
+	.container-left {
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-top: 0%;
+	}
+
+	.container-right {
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.container-center {
+		display: flex;
+		justify-content: center;
+		width: 95%;
+		position: absolute;
+		top: 170px;
+		gap: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: auto 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.vertical-line {
+		height: 28px;
+		width: 3px;
+		top: 7px;
+		margin: 0 10px;
+		background-color: var(--text-color);
+		box-shadow: 1px 1px 1px var(--shadow-dark),
+			-1px -1px 1px var(--shadow-light);
+	}
+
+	.project-container {
+		width: fit-content;
+		writing-mode: vertical-lr;
+	}
+}
