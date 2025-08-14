@@ -1,18 +1,21 @@
 :root {
-	--bg-color: linear-gradient(145deg, #d2dff4, #c0f6ed8c);
+	--bg-color: linear-gradient(145deg, #d2dff4, rgba(193, 246, 237, 0.666));
+	--bg-color2: linear-gradient(145deg, #d2dff4df, rgba(193, 246, 237, 0.582));
+	/* --bg-color2: linear-gradient(145deg, #aec7f259, #a7f6e910); */
 	/* --bg-color: linear-gradient(145deg, #bcceeaa5, #c0f6ed4a); */
 	--card-bg-color: linear-gradient(145deg, #d2dff4a5, #c0f6ed4a);
 	--text-color: #d2dff4;
 	--text-sub-color: #ebf1fc;
 	--text-body-color: #cccccc;
-	--line-color: rgb(209, 212, 214);
+	--line-color: rgb(255, 255, 255);
 	--shadow-light: #ffffff;
-	--shadow-dark: #afafaf;
+	--shadow-dark: #9f9f9f;
 	--highlight: #6fc3df;
 }
 
 body[data-theme="dark"] {
 	--bg-color: linear-gradient(145deg, #313233, #1a1a1c);
+	--bg-color2: linear-gradient(145deg, #313233, #1a1a1c);
 	--card-bg-color: linear-gradient(145deg, #d2dff4a5, #c0f6ed4a);
 	--text-color: #292b2b;
 	--line-color: #4a4a4a;
@@ -52,7 +55,8 @@ body[data-theme="dark"] {
 	overflow: hidden;
 	margin: 0;
 	font-family: "Segoe UI", sans-serif;
-	background: var(--bg-color);
+	background: var(--bg-color2), url("./assets/bg5.png");
+	background-size: cover;
 	color: var(--text-color);
 	height: 100vh;
 	min-height: 685px;
